@@ -55,22 +55,16 @@ body {
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.4.1.js"></script>
 <div><br>
-<span style="text-align: center"><h2><strong>關於本站</strong><h2></span></div>
+<span style="text-align: center"><h2><strong><a href="p6.html">關於本站</a></strong>
+<h2></span></div>
 <div>
-	<span style="text-align: center"><p>今日日期：<input type="text" id="Datepicker1"></p></span>
+	<span style="text-align: center"><p>今日日期：<input type="text" id="datepicker">
+	</p>
+	</span>
 </div>
 <script type="text/javascript">
 $(function() {
-	$( "#Datepicker1" ).datepicker(
-		$.extend(
-		$.datepicker.regional['zh-TW'],
-		{
-		changeMonth:true,
-		changeYear:true,
-		showButtonPanel:true
-		}
-		)
-		); 
+	$( "#datepicker" ).datepicker($.datepicker.regional['zh-TW']); 
 });
 </script>
 </body>
