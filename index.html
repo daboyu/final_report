@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>網頁設計期末報告</title>
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {
+	background-color: #ADE1C4;
+}
+</style>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.datepicker.min.js"></script>
+</head>
+
+<body>
+<h1 style="text-align: center"><strong>陽明山常見的動物</strong></h1>
+<div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: grey">
+  <ol class="carousel-indicators">
+	    <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+	    <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+	  <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+  </ol>
+	  <div class="carousel-inner" role="listbox">
+	    <div class="carousel-item active"><a href="p2.html"> <img src="pic/monkey.jpg" alt="First slide" class="d-block mx-auto">
+	      <div class="carousel-caption">
+	        <h4><strong>台灣獼猴</strong></h4>
+          </div>
+        </div>
+	    <div class="carousel-item"> <a href="p3.html"><img src="pic/bird.jpg" alt="Second slide" class="d-block mx-auto"></a>
+	      <div class="carousel-caption">
+	        <h4><strong>台灣藍鵲</strong></h4>
+          </div>
+        </div>
+	    <div class="carousel-item"> <a href="p4.html"><img src="pic/frog.jpg" alt="Third slide" width="1024" height="450" class="d-block mx-auto">
+	      <div class="carousel-caption">
+	        <h4><strong>台北樹蛙</strong></h4>
+          </div>
+        </div>
+		<div class="carousel-item"> <a href="p5.html">
+		  <img src="pic/cow.jpg" alt="Third slide" width="1500" height="450" class="d-block mx-auto">
+	      <div class="carousel-caption">
+	        <h4><strong>水牛</strong></h4>
+          </div>
+        </div>
+  </div>
+	  <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+<div><br>
+<span style="text-align: center"><h2><strong>關於本站</strong><h2></span></div>
+<div>
+	<span style="text-align: center"><p>今日日期：<input type="text" id="Datepicker1"></p></span>
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Datepicker1" ).datepicker(
+		$.extend(
+		$.datepicker.regional['zh-TW'],
+		{
+		changeMonth:true,
+		changeYear:true,
+		showButtonPanel:true
+		}
+		)
+		); 
+});
+</script>
+</body>
+</html>
