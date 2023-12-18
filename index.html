@@ -13,6 +13,8 @@
 <link href="jQueryAssets/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">
 <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
 <script src="jQueryAssets/jquery.ui-1.10.4.datepicker.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
 <style type="text/css">
 body {
 	background-color: #ADE1C4;
@@ -72,7 +74,8 @@ $(function() {
 		$.datepicker.regional['zh-TW'],
 		{
 		changeMonth:true,
-		changeYear:true
+		changeYear:true,
+		dateFormat:"yy/mm/dd"
 		}
 		)
 		); 
